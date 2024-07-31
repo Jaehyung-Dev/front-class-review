@@ -1,0 +1,29 @@
+div {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background: red;
+}
+
+.container {
+    background: yellow;
+    /*left, top으로 값을 줘도 position의 기본값이 static이기 때문에 효과가 없다.*/
+    left: 20px;
+    top: 20px;
+    /*position 값을 다른값으로 설정하면 값이 제대로 적용된다.*/
+    position: relative;
+}
+
+.box {
+    background: blue;
+    left: 20px;
+    top: 20px;
+    /*relative는 원래 있던 자리를 기준 위치값을 적용*/
+    /* position: relative; */
+    /*absolute는 item이 담겨있는 box 공간을 기준 위치값을 적용-여기서 container기준 left,top 20*/
+    /* position: absolute; */
+    /*fixed는 window를 기준으로 위치값을 적용*/
+    /* position: fixed; */
+    /*sticky는 스크롤을 내려도 원래 있던 자리에 고정되어 보임*/
+    position: sticky;
+}

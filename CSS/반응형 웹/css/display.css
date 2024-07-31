@@ -1,0 +1,20 @@
+div, span {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background: pink;
+}
+
+div {
+    background: red;
+    /*inline은 content 자체만을 꾸며주는*/
+    display: inline;
+    /*inline-block은 한 줄에 block 형태의 여러 content*/
+    display: inline-block;
+}
+
+span {
+    background: blue;
+    /*block은 한 줄에 block형태의 하나의 content만*/
+    display: block;
+}
