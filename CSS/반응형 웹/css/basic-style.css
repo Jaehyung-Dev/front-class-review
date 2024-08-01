@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-colors: center;
+    border: 1px solid #181818;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.color1 {
+    background: red;
+}
+.color2 {
+    background: orange;
+}
+.color3 {
+    background: yellow;
+}
+.color4 {
+    background: green;
+}
+.color5 {
+    background: blue;
+}
+.color6 {
+    background: navy;
+}
+.color7 {
+    background: purple;
+}
+.color8 {
+    background: pink;
+}
+.color9 {
+    background: rosybrown;
+}
+.color10 {
+    background: grey;
+}
