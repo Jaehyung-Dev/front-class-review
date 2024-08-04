@@ -1,5 +1,43 @@
 .container {
     display: grid;
+    /*grid의 template 속성을 이용해서 행과 열에 개수와 사이즈를 지정가능*/
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 200px 100px 100px;
+
+    /*repeat 함수를 이용해 더 쉽게 반복횟수와 사이즈 지정*/
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 200px);
+
+    /*%와 fr단위를 이용해 비율로 유동적인 사이즈 지정*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 50%);
+
+    /*개수를 정하지 않고 사이즈만 설정*/
+    grid-auto-columns: 150px;
+    grid-auto-rows: 100px;
+
+    /*content의 최소 사이즈를 정하고 더 큰 경우 자동으로 커지게*/
+    grid-auto-columns: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
+
+    /*gap*/
+    /* column-gap: 10px;
+    row-gap: 5px; */
+    gap: 10px;
+}
+
+.item2 {
+    /*차지할 구역을 지정가능*/
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    /* start / end로 편하게 지정가능*/
+    grid-column: 2 / 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    /*span을 통해 몇 개의 셀을 차지할건지 지정가능*/
+    grid-column: 2 / span 4;
+
+    /*끝까지 차지하는 경우 -1을 이용*/
+    grid-column: 2 / -1;
 }
