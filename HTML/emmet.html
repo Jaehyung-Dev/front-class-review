@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- div.class -->
+    <div class="class"></div>
+    <!-- div#id -->
+    <div id="id"></div>
+    <!-- .class -> div태그가 기본값 -->
+    <div class="class"></div>
+
+    <!-- 자식태그생성 > -->
+    <!-- div>ul>li-->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- 형제태그는 + -->
+    <!-- div>ul+ol -->
+    <div>
+        <ul></ul>
+        <ol></ol>
+    </div>
+
+    <!-- 태그 여러개는 * -->
+    <!-- ul>li*5 여러개 만들기 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- 부모태그의 형제태그 생성 ^ -->
+    <!-- div>ul>li^ol -->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+        <ol></ol>
+    </div>
+
+    <!-- div>(header>ul>li*2>a)+footer>p -->
+    <div>
+        <header>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </header>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+    <!-- 내부 content는 {} -->
+    <!-- p{hello} -->
+    <p>hello</p>
+    
+    <!-- 연속되는 숫자는 $ -->
+    <!-- p.class${item$}*5 -->
+    <p class="class1">item1</p>
+    <p class="class2">item2</p>
+    <p class="class3">item3</p>
+    <p class="class4">item4</p>
+    <p class="class5">item5</p>
+
+    <!-- 더미용 텍스트 생성 lorem -->
+    <!-- p>lorem -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores asperiores error praesentium ipsam voluptate itaque, consequatur vel suscipit libero reiciendis autem quae ut ea unde? Iure vero illum deserunt cum.</p>
+    <!-- 더미텍스트 단어량 조정 -->
+    <!-- p>lorem4 -->
+    <p>Lorem ipsum dolor sit.</p>
+</body>
+</html>
