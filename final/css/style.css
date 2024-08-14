@@ -12,24 +12,31 @@
 }
 
 
-.emergency-counseling-btn{
+.emergency-counseling {
 
 }
 
-.non-face-counseling-btn {
+.non-face-counseling {
 
 }
 
-.daily-self-btn {
+.daily-self {
 
 }
 
-.daily-diary-btn {
+.daily-diary {
 
 }
 
-.manual-btn {
+.manual {
+    
+}
 
+.navbar-toggleBtn {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    padding: 5px;
 }
 
 @media screen and (max-width: 1023px) {
