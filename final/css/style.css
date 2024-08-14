@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+.navbar-menu.active {
+    display: block;
+}
+
+
+.emergency-counseling-btn{
+
+}
+
+.non-face-counseling-btn {
+
+}
+
+.daily-self-btn {
+
+}
+
+.daily-diary-btn {
+
+}
+
+.manual-btn {
+
+}
+
+@media screen and (max-width: 1023px) {
+    
+}
+
