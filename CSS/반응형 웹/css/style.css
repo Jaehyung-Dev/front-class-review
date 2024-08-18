@@ -33,7 +33,7 @@ p {
 }
 
 .flex-container {
-    display: flexb;
+    display: flex;
     justify-content: space-evenly;
 }
 
