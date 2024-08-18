@@ -10,7 +10,8 @@ let globalName = 'global name';
 age = 4;
 var age;
 
-// constants: 상수는 선언하며 값을 할당한 뒤로는 가리키고 있는 포인터가 잠겨 값을 변경할 수 없다.
+// let => rw(read/write): 메모리에 읽고쓰기 가능
+// constant => r(readOnly): 읽기만 가능
 // security: 해커가 값을 변경하는 것을 방지할 수 있다  
 // thread safety: 어플리케이션이 실행되면 프로세스가 할당되고 프로세스 안에서 다양한 쓰레드가 실행되며
 // 어플리케이션이 빠르게 동작할수 있게 해주는데 이때 쓰레드들이 동시에 변수의 값에 접근하고 값을 변경할 수 있어 위험하다
@@ -23,6 +24,21 @@ const daysInWeek = 7;
 // object, box container => single item을 묶어서 한 단위 또는 한 박스로 관리할 수 있게 해주는 것
 // function, first-class function 
 // => function도 변수에 데이터 할당이 가능하고 함수의 파라미터로 전달할 수도 있으며 리턴 타입으로 function을 사용 가능
+
+// 메모리 저장 방식
+// primitive type 메모리 저장 방식: 값 자체가 메모리에 저장
+let name1 = JH; // name1이 가리킨 곳에 JH가 메모리에 저장
+// object type 메모리 저장 방식: object는 먼저 ref(실제 object가 담긴 메모리)를 가리키고 
+const name2 = { 
+    name:"JH",
+    age:20
+} 
+// name2가 가리킨 곳에 ref, ref가 실제로 오브젝트 값이 있는 메모리를 가리킴  
+// name2가 가리킨 포인터만 잠겨서 name2가 다른 오브젝트로 변경이 불가능하지만
+// 실제 오브젝트 값(name, age)은 계속 변경이 가능 
+
+
+/*primitive 타입들*/
 
 // js에서는 숫자는 정수, 실수 구분없이 number 타입
 const count = 17; // integer
